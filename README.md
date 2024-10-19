@@ -17,7 +17,7 @@ For the specific data processing procedure, please refer to `data.py`.
 
 ## 2.Model
 I have currently only updated the CNN network architecture(refer to `CNN.py`). I will be updating the subsequent architectures regularly, so please stay tuned to this repository. I will update the repository with **Graph Neural Networks (GCN), Hypergraph Neural Networks (HGCN)**, and how to integrate **KAN** in the future. Stay tuned for those updates.
-* Application of Attention in CNN: [CNN_attention](CNN_attention.md)
+* Application of Attention in CNN: [CNN_attention](./md/CNN_attention.md)
 
 ## 3.train
 You can execute the following command to perform the training, testing, and validation of the network:
