@@ -15,9 +15,21 @@ The data used in this repository is the bearing fault diagnosis dataset from **J
 
 For the specific data processing procedure, please refer to `data.py`.
 
+The following code needs to be run to generate the dataset：
+
+````
+python data.py
+````
+
 ## 2.Model
 I have currently only updated the CNN network architecture(refer to `CNN.py`). I will be updating the subsequent architectures regularly, so please stay tuned to this repository. I will update the repository with **Graph Neural Networks (GCN), Hypergraph Neural Networks (HGCN)**, and how to integrate **KAN** in the future. Stay tuned for those updates.
 * Application of Attention in CNN: [CNN_attention](./md/CNN_attention.md)
+* Transformer Applications in Fault Diagnosis: [Transformer](./md/Transformer.md)
+* GCN Applications in Fault Diagnosis: [GCN](./md/GCN.md)
+* HyperGraph Applications in Fault Diagnosis: [HyperGraph](./md/HyperGraph.md)
+* Diffusion Model Applications in Fault Diagnosis: [Diffusion](./md/Diffusion.md)
+* Application of KAN in model: [KAN](./md/KAN.md)
+
 
 ## 3.train
 You can execute the following command to perform the training, testing, and validation of the network:
