@@ -108,8 +108,8 @@ def train(train_loader, val_loader, model, num_epoch, lr, weight_decay, patience
     count = 0
     for epoch in range(num_epoch):
         for data, label in train_loader:
-            data.to(device)
-            label.to(device)
+            data = data.to(device)
+            label = label.to(device)
             out = model(data)
             l = F.nll_loss(out, label)
             batch_loss_train_lst.append(l.item())
@@ -124,8 +124,8 @@ def train(train_loader, val_loader, model, num_epoch, lr, weight_decay, patience
         model.eval()
         with torch.no_grad():
             for data, label in val_loader:
-                data.to(device)
-                label.to(device)
+                data = data.to(device)
+                label = label.to(device)
                 out = model(data)
                 l = F.nll_loss(out, label)
                 acc = valid(out, label)
@@ -154,7 +154,7 @@ def test(model, weight_path, test_loader, device):
     f1_lst = []
     with torch.no_grad():
         for data, label in test_loader:
-            data.to(device)
+            data = data.to(device)
             out = model(data)
             acc = accuracy_score(label.detach().cpu().numpy(), out.detach().cpu().numpy().argmax(axis=1))
             f1 = f1_score(label.detach().cpu().numpy(), out.detach().cpu().numpy().argmax(axis=1), average='micro')
