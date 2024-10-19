@@ -20,7 +20,7 @@ parser.add_argument('--n_class', type=int, default=4, help='Classes')
 
 args = parser.parse_args()
 
-device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')=0
+device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 model = Conv_1d(args.in_channel, args.dropout, args.n_class)
 
 with open(args.data_path, 'rb') as f:
