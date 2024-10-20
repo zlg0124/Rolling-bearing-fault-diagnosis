@@ -9,6 +9,9 @@ The workflow of the entire repository is divided into the following steps:
 * numpy ==  1.23.5
 * matplotlib == 3.7.2
 
+# Update progress
+* **2024.10.26**: The **SE layer** has been updated and integrated with **CNN**. For more details, please refer to `SE_layer.py` and `SE_Conv.py`.
+
 ## 1. Data Processing
 The data used in this repository is the bearing fault diagnosis dataset from **Jiangnan University**. We first generate our training samples using techniques such as resampling, sliding window sampling, and FFT (Fast Fourier Transform). Please describe the specific processing procedure in conjunction with the following image.
 ![The construction process of Feature Matrix.](images/fig1.jpg)
