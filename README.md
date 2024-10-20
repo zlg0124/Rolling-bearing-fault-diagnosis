@@ -9,7 +9,7 @@ The workflow of the entire repository is divided into the following steps:
 * numpy ==  1.23.5
 * matplotlib == 3.7.2
 
-## 1.Data Processing
+## 1. Data Processing
 The data used in this repository is the bearing fault diagnosis dataset from **Jiangnan University**. We first generate our training samples using techniques such as resampling, sliding window sampling, and FFT (Fast Fourier Transform). Please describe the specific processing procedure in conjunction with the following image.
 ![The construction process of Feature Matrix.](images/fig1.jpg)
 
@@ -21,7 +21,7 @@ The following code needs to be run to generate the dataset：
 python data.py
 ````
 
-## 2.Model
+## 2. Model
 I have currently updated only the CNN network architecture (refer to `CNN.py`). I will be regularly updating the repository with subsequent architectures, so please stay tuned. Future updates will include **Graph Neural Networks (GCN)**, **Hypergraph Neural Networks (HGCN)**, and guidance on integrating **KAN**. Stay tuned for those additions.
 * Application of Attention in CNN: [CNN_attention](./md/CNN_attention.md)
 * Transformer Applications in Fault Diagnosis: [Transformer](./md/Transformer.md)
@@ -31,16 +31,16 @@ I have currently updated only the CNN network architecture (refer to `CNN.py`). 
 * Application of KAN in model: [KAN](./md/KAN.md)
 
 
-## 3.train
+## 3. train
 You can execute the following command to perform the training, testing, and validation of the network:
 ````
 python train.py
 ````
-## 4.Visualization
+## 4. Visualization
 Please refer to the visualization shown in the following image. Stay tuned for updates to the repository.
 <img src="images/fig2.png" alt="vis" width="400"/>
 <img src="images/jnu3.png" alt="vis" width="370"/>
-## 5.Result(CNN)
+## 5. Result(CNN)
 ````
 epoch: 0, train_loss: 0.7124, train_acc: 0.7076, val_loss: 2.8137, val_acc: 0.2533
 epoch: 1, train_loss: 0.9230, train_acc: 0.6145, val_loss: 1.7241, val_acc: 0.5033
@@ -244,5 +244,6 @@ epoch: 198, train_loss: 0.1807, train_acc: 0.9044, val_loss: 0.1903, val_acc: 0.
 epoch: 199, train_loss: 0.1867, train_acc: 0.9011, val_loss: 0.1963, val_acc: 0.8996
 avg acc: 0.99, avg f1 score: 0.99
 ````
-## 6.Colab Example
+## 6. Colab Example
 * CNN https://colab.research.google.com/drive/11oUiFY0ECD6CAL2CqO_VbhnSrCj80_Vw#scrollTo=tF5Ky0wz10u8
+* SE_Conv https://colab.research.google.com/drive/1vMhpqa8d5PxLOUFXSXE3wIf_lIxSskd1#scrollTo=fPDNYIlG5L7Q
