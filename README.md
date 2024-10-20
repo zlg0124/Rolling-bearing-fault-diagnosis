@@ -22,7 +22,7 @@ python data.py
 ````
 
 ## 2.Model
-I have currently only updated the CNN network architecture(refer to `CNN.py`). I will be updating the subsequent architectures regularly, so please stay tuned to this repository. I will update the repository with **Graph Neural Networks (GCN), Hypergraph Neural Networks (HGCN)**, and how to integrate **KAN** in the future. Stay tuned for those updates.
+I have currently updated only the CNN network architecture (refer to `CNN.py`). I will be regularly updating the repository with subsequent architectures, so please stay tuned. Future updates will include **Graph Neural Networks (GCN)**, **Hypergraph Neural Networks (HGCN)**, and guidance on integrating **KAN**. Stay tuned for those additions.
 * Application of Attention in CNN: [CNN_attention](./md/CNN_attention.md)
 * Transformer Applications in Fault Diagnosis: [Transformer](./md/Transformer.md)
 * GCN Applications in Fault Diagnosis: [GCN](./md/GCN.md)
