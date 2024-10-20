@@ -244,5 +244,5 @@ epoch: 198, train_loss: 0.1807, train_acc: 0.9044, val_loss: 0.1903, val_acc: 0.
 epoch: 199, train_loss: 0.1867, train_acc: 0.9011, val_loss: 0.1963, val_acc: 0.8996
 avg acc: 0.99, avg f1 score: 0.99
 ````
-## 6.Colab Colab Example
+## 6.Colab Example
 * CNN https://colab.research.google.com/drive/11oUiFY0ECD6CAL2CqO_VbhnSrCj80_Vw#scrollTo=tF5Ky0wz10u8
