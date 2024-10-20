@@ -10,7 +10,8 @@ The workflow of the entire repository is divided into the following steps:
 * matplotlib == 3.7.2
 
 # Update progress
-* **2024.10.20**: The **SE layer** has been updated and integrated with **CNN**. For more details, please refer to [SELayer.py](./layers/SELayer.py) and `SE_Conv.py`.
+* **2024.10.19**: The first model has been updated: CNN. Please refer to [CNN.py](./model/CNN.py)
+* **2024.10.20**: The **SE layer** has been updated and integrated with **CNN**. For more details, please refer to [SELayer.py](./layers/SELayer.py) and [SE_Conv.py](./layers/SE_Conv.py).
 
 ## 1. Data Processing
 The data used in this repository is the bearing fault diagnosis dataset from **Jiangnan University**. We first generate our training samples using techniques such as resampling, sliding window sampling, and FFT (Fast Fourier Transform). Please describe the specific processing procedure in conjunction with the following image.
@@ -25,7 +26,6 @@ python data.py
 ````
 
 ## 2. Model
-I have currently updated only the CNN network architecture (refer to `CNN.py`). I will be regularly updating the repository with subsequent architectures, so please stay tuned. Future updates will include **Graph Neural Networks (GCN)**, **Hypergraph Neural Networks (HGCN)**, and guidance on integrating **KAN**. Stay tuned for those additions.
 * Application of Attention in CNN: [CNN_attention](./md/CNN_attention.md)
 * Transformer Applications in Fault Diagnosis: [Transformer](./md/Transformer.md)
 * GCN Applications in Fault Diagnosis: [GCN](./md/GCN.md)
