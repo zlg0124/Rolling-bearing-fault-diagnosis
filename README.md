@@ -41,7 +41,6 @@ python train.py
 ````
 ## 4. Visualization
 Please refer to the visualization shown in the following image. Stay tuned for updates to the repository.
-
 **(The confusion matrix shown here represents the results after noise was added to the data. Unless otherwise specified, the results presented in this repository are without added noise!)**
 <img src="images/fig2.png" alt="vis" width="400"/>
 <img src="images/jnu3.png" alt="vis" width="370"/>
