@@ -35,6 +35,8 @@ if args.model_type == 'CNN':
     model = Conv_1d(args.in_channel, args.dropout, args.n_class)
 elif args.model_type == 'SE_Conv':
     model = SE_Conv(args.in_channel, args.dropout, args.reduction, args.n_class)
+elif args.model_type == 'CBAM_Conv':
+    model = CBAM_Conv(args.in_channel, args.reduction)
 
 train(train_loader, val_loader, model, args.num_epoch, args.lr, args.weight_decay, args.patience, device, args.weight_path)
 test(model, args.weight_path, test_loader, device)
