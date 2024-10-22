@@ -2,7 +2,7 @@ import torch
 import torch.nn as nn
 import torch.nn.functional as F
 
-class SELayer(nn.Module):
+class SE_Layer(nn.Module):
     def __init__(self, in_channel, reduction):
         super().__init__()
         self.avg_pool = nn.AdaptiveAvgPool1d(1)
