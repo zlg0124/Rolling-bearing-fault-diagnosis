@@ -1,7 +1,7 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-from layers.SELayer import SELayer
+from layers.SELayer import SE_Layer
 
 class SE_Conv(nn.Module):
     def __init__(self, in_channel, dropout, reduction, n_class):
@@ -44,7 +44,7 @@ class SE_Conv(nn.Module):
             nn.MaxPool1d(kernel_size=2, stride=2)
         )
 
-        self.att = SELayer(64, reduction) 
+        self.att = SE_Layer(64, reduction) 
 
         self.out_layer = nn.Sequential(
             nn.Linear(64*94, 1024),
