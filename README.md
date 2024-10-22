@@ -12,6 +12,7 @@ The workflow of the entire repository is divided into the following steps:
 # Update progress
 * **2024.10.19**: The first model has been updated: CNN. Please refer to [CNN.py](./model/CNN.py)
 * **2024.10.20**: The **SE layer** has been updated and integrated with **CNN**. For more details, please refer to [SELayer.py](./layers/SELayer.py) and [SE_Conv.py](./model/CNN_attention.py).
+* **2024.10.22**: The **CBAM** has been updated and integrated with **CNN**. For more details, please refer to [CBAM.py](./layers/CBAM.py) and [CBAM_Conv.py](./model/CNN_attention.py)
 
 ## 1. Data Processing
 The data used in this repository is the bearing fault diagnosis dataset from **Jiangnan University**. We first generate our training samples using techniques such as resampling, sliding window sampling, and FFT (Fast Fourier Transform). Please describe the specific processing procedure in conjunction with the following image.
@@ -251,3 +252,4 @@ avg acc: 0.99, avg f1 score: 0.99
 ## 6. Colab Example
 * CNN https://colab.research.google.com/drive/11oUiFY0ECD6CAL2CqO_VbhnSrCj80_Vw#scrollTo=tF5Ky0wz10u8
 * SE_Conv https://colab.research.google.com/drive/1vMhpqa8d5PxLOUFXSXE3wIf_lIxSskd1#scrollTo=fPDNYIlG5L7Q
+* CBAM_Conv https://colab.research.google.com/drive/1YStAU2-9Ssp67e6umLwb09_4IDvsx9ay#scrollTo=5r-HAEkICbJO
