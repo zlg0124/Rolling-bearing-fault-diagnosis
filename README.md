@@ -254,3 +254,4 @@ avg acc: 0.99, avg f1 score: 0.99
 * CNN https://colab.research.google.com/drive/11oUiFY0ECD6CAL2CqO_VbhnSrCj80_Vw#scrollTo=tF5Ky0wz10u8
 * SE_Conv https://colab.research.google.com/drive/1vMhpqa8d5PxLOUFXSXE3wIf_lIxSskd1#scrollTo=fPDNYIlG5L7Q
 * CBAM_Conv https://colab.research.google.com/drive/1YStAU2-9Ssp67e6umLwb09_4IDvsx9ay#scrollTo=5r-HAEkICbJO
+* Transformer https://colab.research.google.com/drive/1PocqdgLcfvUD7fOcq_1wCRdGbC_BxA94#scrollTo=3QcHTTvZ7kl7
