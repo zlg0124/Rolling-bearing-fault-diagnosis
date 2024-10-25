@@ -2,7 +2,6 @@
 (Leveraging multiple deep learning models for fault diagnosis)
 The purpose of creating this repository is to improve my programming skills, while also providing a new perspective for those interested in this field. I will continue to update this repository regularly.
 
-The workflow of the entire repository is divided into the following steps:
 # Environment Settings
 * python == 3.9
 * torch == 2.0.1
@@ -15,6 +14,7 @@ The workflow of the entire repository is divided into the following steps:
 * **2024.10.22**: The **CBAM** has been updated and integrated with **CNN**. For more details, please refer to [CBAM.py](./layers/CBAM.py) and [CBAM_Conv.py](./model/CNN_attention.py)
 * **2024.10.25**: **Transformer**. For more details, please refer to [transformer.py](./layers/transformer.py) and [Transformer.py](./model/Transformer.py)
 
+The workflow of the entire repository is divided into the following steps:
 ## 1. Data Processing
 The data used in this repository is the bearing fault diagnosis dataset from **Jiangnan University**. We first generate our training samples using techniques such as resampling, sliding window sampling, and FFT (Fast Fourier Transform). Please describe the specific processing procedure in conjunction with the following image.
 ![The construction process of Feature Matrix.](images/fig1.jpg)
