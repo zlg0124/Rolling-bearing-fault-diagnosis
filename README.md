@@ -13,7 +13,7 @@ The workflow of the entire repository is divided into the following steps:
 * **2024.10.19**: The first model has been updated: CNN. Please refer to [CNN.py](./model/CNN.py)
 * **2024.10.20**: The **SE layer** has been updated and integrated with **CNN**. For more details, please refer to [SELayer.py](./layers/SELayer.py) and [SE_Conv.py](./model/CNN_attention.py).
 * **2024.10.22**: The **CBAM** has been updated and integrated with **CNN**. For more details, please refer to [CBAM.py](./layers/CBAM.py) and [CBAM_Conv.py](./model/CNN_attention.py)
-* **2024.10.25**: Transformer. For more details, please refer to [transformer.py](./layers/transformer.py) and [Transformer.py](./layers/Transformer.py)
+* **2024.10.25**: Transformer. For more details, please refer to [transformer.py](./layers/transformer.py) and [Transformer.py](./model/Transformer.py)
 
 ## 1. Data Processing
 The data used in this repository is the bearing fault diagnosis dataset from **Jiangnan University**. We first generate our training samples using techniques such as resampling, sliding window sampling, and FFT (Fast Fourier Transform). Please describe the specific processing procedure in conjunction with the following image.
