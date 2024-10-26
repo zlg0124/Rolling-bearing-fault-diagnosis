@@ -13,6 +13,7 @@ The purpose of creating this repository is to improve my programming skills, whi
 * **2024.10.20**: The **SE layer** has been updated and integrated with **CNN**. For more details, please refer to [SELayer.py](./layers/SELayer.py) and [SE_Conv.py](./model/CNN_attention.py).
 * **2024.10.22**: The **CBAM** has been updated and integrated with **CNN**. For more details, please refer to [CBAM.py](./layers/CBAM.py) and [CBAM_Conv.py](./model/CNN_attention.py)
 * **2024.10.25**: **Transformer**. For more details, please refer to [transformer.py](./layers/transformer.py) and [Transformer.py](./model/Transformer.py)
+* **2024.10.26-2024.?.?**: **GAN**
 
 The workflow of the entire repository is divided into the following steps:
 ## 1. Data Processing
