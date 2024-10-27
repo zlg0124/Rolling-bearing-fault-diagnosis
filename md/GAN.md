@@ -6,9 +6,12 @@
 * $D(x;\theta_d)$ that outputs a **single scalar**
 
 ## Value function $V(G, D)$
-* 以分类任务问题进行讨论:
-若把真正的图片看做1，而生成的图片看做0,则我们可以很清楚的认识到: 若$D$训练的特别好，$D(G(z))=0$,则$log(1-D(G(z)))=log1=0$, 此时$D(x)=1$, $log(D(x))=1$, 整个的$V(G, D)=0$;
-* 根据上述分析，我们首先训练D,保证$\max _D V(D, G)$；
-* 其次训练G,使得$\min _G V(G, D)$, 即逐渐减小$log(1-D(z))$，原因在于使得D无法分辨生成的图片到底是0还是1，避免出现D(G(z))=1的情况。因为，在极端情况下, $D(G(z))=1$, 此时$log(1-D(G(z)))=log0~-\infty$,这就说明D没有得到完全的训练。
+<img src="../images/eq1.png" alt="vis" width="600"/>
+* **Discussion based on a classification task:**
+If we consider real images as 1 and generated images as 0, we can clearly understand the following: if $D$ is trained particularly well and $D(G(z)) = 0$, then $log(1 - D(G(z))) = log1 = 0$. At this point, $D(x) = 1$, so $log(D(x)) = 1$, and the overall $V(G, D) = 0$.
+* Based on the above analysis, we first train $D$ to ensure $\max _D V(D, G)$. Due to the nature of the logarithm function, when $D$ is not well-trained, $V(G, D)$ will be a negative value.
 
-
+* Next, we train $G$ to minimize $\min _G V(G, D)$, which means gradually reducing $log(1 - D(z))$. This is to avoid the scenario where $D(G(z)) = 1$. In extreme cases, if $D(G(z)) = 1$, then $log(1 - D(G(z))) = log0 \sim -\infty$. Therefore, by training $G$, we aim to make $D$ unable to distinguish whether the generated images are 0 or 1.
+## Demo
+<img src="../images/gan1.png" alt="vis" width="600"/>
+<img src="../images/gan2.png" alt="vis" width="600"/>
