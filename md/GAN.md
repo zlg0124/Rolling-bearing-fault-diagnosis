@@ -7,7 +7,8 @@
 
 ## Value function $V(G, D)$
 <img src="../images/eq1.png" alt="vis" width="600"/>
-* **Discussion based on a classification task:**
+
+* **Discussion based on a classification task**:
   
 If we consider real images as 1 and generated images as 0, we can clearly understand the following: if $D$ is trained particularly well and $D(G(z))=0$, then $log(1 - D(G(z))) = log1 = 0$. At this point, $D(x) = 1$, so $log(D(x)) = 1$, and the overall $V(G, D)=0$.
 * Based on the above analysis, we first train $D$ to ensure $\max _D V(D, G)$. Due to the nature of the logarithm function, when $D$ is not well-trained, $V(G, D)$ will be a negative value.
