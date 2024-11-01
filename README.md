@@ -14,6 +14,7 @@ The purpose of creating this repository is to improve my programming skills, whi
 * **2024.10.22**: The **CBAM** has been updated and integrated with **CNN**. For more details, please refer to [CBAM.py](./layers/CBAM.py) and [CBAM_Conv.py](./model/CNN_attention.py)
 * **2024.10.25**: **Transformer**. For more details, please refer to [transformer.py](./layers/transformer.py) and [Transformer.py](./model/Transformer.py)
 * **2024.10.30**: I've updated two demos, mainly regarding the implementation of GAN and WGAN. You can refer to the files [GAN.py](./Demo_GAN/GAN.py) and [WGAN.py](./Demo_GAN/WGAN_GP.py). The next step is to use GAN for fault classification.
+* **2024.11.01**: I updated a demo on GCN ([GCN](./Demo_GCN)), which will later become part of a GAN.
 
 The workflow of the entire repository is divided into the following steps:
 ## 1. Data Processing
