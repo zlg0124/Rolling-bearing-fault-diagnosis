@@ -123,7 +123,7 @@ def train(model, model_z2g, discriminator, D_Graph, optimizers, distribution, da
 
     # D_graph判别器训练
     GD_real = D_Graph(features_dense)
-    GD_fake = D_Graph(model_z2g(z_real_dist, adj))
+    GD_fake = D_Graph(model_z2g(z_real_dist, adj_norm))
     discriminator_optimizer_z2g.zero_grad()
     GD_loss_real = F.binary_cross_entropy_with_logits(GD_real, torch.ones_like(GD_real))
     GD_loss_fake = F.binary_cross_entropy_with_logits(GD_fake.detach(), torch.zeros_like(GD_fake))
