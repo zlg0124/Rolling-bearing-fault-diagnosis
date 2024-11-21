@@ -26,8 +26,7 @@ emb_lsts = emb_lst['emb']
 for i in range(len(emb_lsts)):
     emb_lsts[i] = emb_lsts[i].to(device)
 
-embedding = emb_lsts[-1]
-# print(embedding.shape) 2708, 256
+embedding = emb_lsts[-2]
 
 features = torch.FloatTensor(res_data['features']).to(device)
 label = res_data['labels'].to(device)
@@ -68,18 +67,18 @@ class Conv(nn.Module):
         self.layer3 = nn.Sequential(
             # nn.Linear(16*417, 128),
             nn.Linear(16*762, 256),
-            nn.Dropout(0.5),
+            nn.Dropout(),
         )
 
         self.concat_layer = nn.Sequential(
             nn.Linear(512, 256),
             nn.ReLU(),
-            nn.Dropout(0.2)
+            nn.Dropout()
         )
         self.out_layer = nn.Sequential(
             nn.Linear(256, n_class),
             nn.ReLU(),
-            nn.Dropout(0.2)
+            nn.Dropout()
         )
 
 
