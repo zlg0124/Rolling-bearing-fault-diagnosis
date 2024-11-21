@@ -120,7 +120,7 @@ def train(model, model_z2g, discriminator, D_Graph, optimizers, distribution, da
     labels_cycle = features_dense
     
     cost_cycle = norm * F.binary_cross_entropy_with_logits(preds_cycle, labels_cycle)
-    reconstruction_loss = (cost + cost_cycle) / 2.0 # Reconstruction loss
+    reconstruction_loss = 0.01*cost + cost_cycle # Reconstruction loss
     
     latent_dim, preds_sub = model(features_dense, adj)
     d_fake = discriminator(latent_dim)
