@@ -80,5 +80,7 @@ epoch: 579, train_loss: 1.0672, train_acc: 0.62, val_loss: 0.9777, val_acc: 0.94
 epoch: 589, train_loss: 1.0666, train_acc: 0.62, val_loss: 0.9944, val_acc: 0.9388
 ACC: 0.9737704918032787, F1_Score: 0.9737704918032787
 ````
+## Question
+Both the training of DBGAN and the downstream tasks are extremely unstable. Therefore, everyone is welcome to refer to my code and engage in discussions. Let’s work together to figure out where these issues might be arising!
 
 
