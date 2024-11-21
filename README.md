@@ -32,7 +32,7 @@ python data.py
 ## 2. Model
 * Application of Attention in CNN: [CNN_attention](./md/CNN_attention.md)
 * Transformer Applications in Fault Diagnosis: [Transformer](./md/Transformer.md)
-* GAN Applications in Falut Diagnosis: [GAN](./md/GAN.md)
+* GAN Applications in Falut Diagnosis: [GAN](./md/GAN.md) and [GAN+CNN](./DBGAN/read.md)
 * GCN Applications in Fault Diagnosis: [GCN](./md/GCN.md)
 * HyperGraph Applications in Fault Diagnosis: [HyperGraph](./md/HyperGraph.md)
 * Diffusion Model Applications in Fault Diagnosis: [Diffusion](./md/Diffusion.md)
