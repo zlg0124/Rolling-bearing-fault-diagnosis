@@ -37,7 +37,7 @@ discriminator_optimizer = torch.optim.Adam(discriminator.parameters(), lr=0.0001
 discriminator_optimizer_z2g = torch.optim.Adam(D_Graph.parameters(), lr=0.0001, betas=(0.9, 0.99))
 
 generator_optimizer_z2g = torch.optim.Adam(model_z2g.parameters(), lr=0.0001, betas=(0.9, 0.99))
-encoder_optimizer = torch.optim.Adam(model.parameters(), lr=0.0006, betas=(0.9, 0.99)) 
+encoder_optimizer = torch.optim.Adam(model.parameters(), lr=0.0001, betas=(0.9, 0.99)) 
 
 optimizers = {
     'generator_optimizer_z2g': generator_optimizer_z2g,
