@@ -83,7 +83,7 @@ class Conv(nn.Module):
 
 
     def forward(self, x, embedding):
-        # x = F.dropout(x, p=0.5)
+        x = F.dropout(x, p=0.5)
         x = x.unsqueeze(dim=1)
         x = self.layer1(x)
         x = self.layer2(x)
@@ -93,6 +93,7 @@ class Conv(nn.Module):
         # print(x.shape)
         x = torch.concat((x, embedding), dim=1)
         x = self.concat_layer(x)
+        x = F.dropout(x, p=0.5)
         # print(x.shape)
         x = self.out_layer(x)
         return F.softmax(x, dim=1)
